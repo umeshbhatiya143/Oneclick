@@ -6,11 +6,11 @@ import { HiOutlineMapPin } from 'react-icons/hi2';
 
 const Landingpage = () => {
   return (
-  <section id='hero_container' className='hero_container'>
+  <div id='hero_container' className='hero_container'>
    <div className="hero_img_hld">
     <img src={Banner} alt="" />
    </div>
-   <div className="hero_content_hld">
+   <section className="hero_content_hld">
      <h1 className="hero_content_title">There Are <span style={{color
     :"#1967D2"}}>93,178</span>  Posting Here For You!</h1>
      <p className='hero_content_subTitle'>Find Jobs, Employment & Career Opportunities</p>
@@ -35,8 +35,8 @@ const Landingpage = () => {
             <span style={{fontWeight:500}}>Popular Searches : &nbsp;</span>
             <span> Designer, Developer, Web, IOS, PHP, Senior, Engineer</span>
         </div>
-   </div>
-  </section>
+   </section>
+  </div>
   )
 }
 
