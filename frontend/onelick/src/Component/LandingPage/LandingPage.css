@@ -99,6 +99,7 @@ input:focus{
     font-size: 14px;
     display: flex;
     gap: 20px;
+    /* margin-top: 10px; */
 }
 
 @media screen and (max-width:1200px){

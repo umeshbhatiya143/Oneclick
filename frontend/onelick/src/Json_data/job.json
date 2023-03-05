@@ -1,0 +1,99 @@
+[
+    {
+    "id" : 1,
+    "image" : "https://superio-next.vercel.app/images/resource/company-logo/1-1.png" ,
+    "title" : "Software Engineer (Android), Libraries",
+    "jobProfile" : "Segment",
+    "location" : " London, UK",
+    "postedTime" : " 8:00 PM",
+    "salary" : "35k - 45k",
+    "employementType": "Full Time",
+    "jobDescription" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore",
+    "mode": "private",
+    "status": "active",
+    "skills" : ["android", "libraries", "javascript", "reactjs", "nodejs"],
+    "requirement": "Urgent"
+    
+},
+{
+    "id" : 2,
+    "image" : "https://superio-next.vercel.app/images/resource/company-logo/1-2.png" ,
+    "title" : "Recruiting Coordinator",
+    "jobProfile" : "Catalyst",
+    "location" : " London, UK",
+    "postedTime" : " 9:00 PM",
+    "salary" : "35k - 45k",
+    "employementType": "Freelancer",
+    "jobDescription" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore",
+    "mode": "private",
+    "status": "active",
+    "skills" : ["android", "libraries", "javascript", "reactjs", "nodejs"],
+    "requirement": "Urgent"
+    
+},
+{
+    "id" : 3,
+    "image" : "https://superio-next.vercel.app/images/resource/company-logo/1-3.png" ,
+    "title" : "Product Manager, Studio",
+    "jobProfile" : "Invision",
+    "location" : " London, UK",
+    "postedTime" : " 8:00 PM",
+    "salary" : "35k - 45k",
+    "employementType": "Part Time",
+    "jobDescription" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore",
+    "mode": "private",
+    "status": "active",
+    "skills" : ["android", "libraries", "javascript", "reactjs", "nodejs"],
+    "requirement": "Urgent"
+    
+},
+{
+    "id" : 4,
+    "image" : "https://superio-next.vercel.app/images/resource/company-logo/1-4.png" ,
+    "title" : "Senior Product Designer",
+    "jobProfile" : "Upwork",
+    "location" : " London, UK",
+    "postedTime" : " 8:00 PM",
+    "salary" : "35k - 45k",
+    "employementType": "Temporary",
+    "jobDescription" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore",
+    "mode": "private",
+    "status": "active",
+    "skills" : ["android", "libraries", "javascript", "reactjs", "nodejs"],
+    "requirement": "Urgent"
+    
+},
+{
+    "id" : 5,
+    "image" : "https://superio-next.vercel.app/images/resource/company-logo/1-5.png" ,
+    "title" : "Senior Full Stack Engineer, Creator Success",
+    "jobProfile" : "Medium",
+    "location" : " London, UK",
+    "postedTime" : " 8:00 PM",
+    "salary" : "35k - 45k",
+    "employementType": "Full Time",
+    "jobDescription" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore",
+    "mode": "private",
+    "status": "active",
+    "skills" : ["android", "libraries", "javascript", "reactjs", "nodejs"],
+    "requirement": "Urgent"
+    
+},
+{
+    "id" : 6,
+    "image" : "https://superio-next.vercel.app/images/resource/company-logo/1-6.png" ,
+    "title" : "Software Engineer (Android), Libraries",
+    "jobProfile" : "Figma",
+    "location" : " London, UK",
+    "postedTime" : " 8:00 PM",
+    "salary" : "35k - 45k",
+    "employementType": "Freelancer",
+    "jobDescription" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore",
+    "mode": "private",
+    "status": "active",
+    "skills" : ["android", "libraries", "javascript", "reactjs", "nodejs"],
+    "requirement": "Urgent"
+    
+}
+]
+

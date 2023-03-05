@@ -15,7 +15,7 @@ const Landingpage = () => {
     :"#1967D2"}}>93,178</span>  Posting Here For You!</h1>
      <p className='hero_content_subTitle'>Find Jobs, Employment & Career Opportunities</p>
      <div className="job_search_form">
-        <form action="" method="Get">
+        <form action="" method="">
             <div className="job_search_form_row">
              <div className="form_group">
                 <AiOutlineSearch size={30}/>

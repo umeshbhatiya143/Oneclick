@@ -24,13 +24,12 @@
   font-weight: 700;
   font-size: 20px;
   color: black;
- font-family: 'Special Elite', cursive;
+ /* font-family: 'Special Elite', cursive; */
 }
 
 .logo_contain_hld {
 
   width: 100%;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,7 +69,17 @@
 }
 @media screen and (max-width:540px) {
  .logo_contain img{
-  width: 50%;
+  width: 70%;
   aspect-ratio: 3/2;
+ }
+ .slider-container-hld{
+  height: 120px;
+ }
+ .slider-container span{
+  font-size: 17px;
+  /* margin-bottom: -40px; */
+ }
+ .logo_contain_hld{
+  margin-top: -20px;
  }
 }
