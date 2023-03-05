@@ -174,7 +174,9 @@ nav input,
 #mobile-menu-logo img {
   margin-left: -25px;
 }
-
+#menu_close:hover{
+  cursor:pointer;
+}
 #social_details {
   display: none;
   flex-direction: column;
@@ -210,12 +212,13 @@ nav input,
   }
 
   #nav-items-holder {
+    overflow: scroll;
     display: block;
     position: absolute;
     border: 1px solid gray;
     top: 0px;
     background-color: #ffffff;
-    height: 100vh;
+    height: 120vh;
     transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -ms-transition: all .2s ease-in-out;

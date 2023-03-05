@@ -21,8 +21,13 @@ export default function Navbar() {
         $(".hamburger").click(function () {
              $("#nav-items-holder").toggleClass("mobile_open", navToggle);
             setnavToggle(!navToggle);
-            setToggle(!toggle);
+            // setToggle(!toggle);
         });
+        $("#menu_close").click(function () {
+            $("#nav-items-holder").toggleClass("mobile_open", navToggle);
+           setnavToggle(!navToggle);
+           // setToggle(!toggle);
+       });
 
 
     });
@@ -62,7 +67,7 @@ export default function Navbar() {
                         <Link to="hero-home" spy={true} smooth={true} className="link">
                             <img id="logo" src={logo} alt="" />
                         </Link>
-                        <div className="menu_close">
+                        <div id="menu_close" className="menu_close">
                             <RxCrossCircled size={30}/>
                         </div>
                     </div>
