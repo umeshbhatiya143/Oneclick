@@ -1,6 +1,7 @@
 import React from 'react'
 import './About.css'
 import aboutImg from '../../assets/aboutImage.jpg'
+import CountUp from 'react-countup';
 
 const About = () => {
     return (
@@ -23,6 +24,63 @@ const About = () => {
                     </div>
                 </div>
             </div>
+
+            {/* client count up */}
+            <div className="countUp_client">
+                <CountUp
+                    start={0}
+                    end={4}
+                    duration={2.75}
+                    enableScrollSpy={true}
+
+                >
+                    {({ countUpRef, start }) => (
+                        <div className="countup">
+                            <div>
+                                <span ref={countUpRef} />
+                                <span>M</span>
+                            </div>
+                            <p>4 million daily active users</p>
+                        </div>
+                    )}
+                </CountUp>
+                <CountUp
+                    start={0}
+                    end={12}
+                    duration={2.75}
+                    enableScrollSpy={true}
+
+                >
+                    {({ countUpRef, start }) => (
+                        <div className="countup">
+                            <div>
+                                <span ref={countUpRef} />
+                                <span>K</span>
+                            </div>
+                            <p>Over 12k open job positions</p>
+                        </div>
+                    )}
+                </CountUp>
+                <CountUp
+                    start={0}
+                    end={20}
+                    duration={2.75}
+                    enableScrollSpy={true}
+
+                >
+                    {({ countUpRef, start }) => (
+                        <div className="countup">
+                            <div>
+                                <span ref={countUpRef} />
+                                <span>M</span>
+                            </div>
+                            <p>Over 20 million stories shared</p>
+                        </div>
+                    )}
+                </CountUp>
+            </div>
+
+           
         </section>
     )
 }

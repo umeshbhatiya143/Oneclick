@@ -1,6 +1,4 @@
 #Featured_container {
-    /* width: 100%; */
-    /* background-color: red; */
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -11,7 +9,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* padding: 40px 100px; */
 }
 
 .featured_job_title_hld {
@@ -131,7 +128,7 @@
     }
     .addToFavourite {
         position: absolute;
-        right: 20px;
+        right: 40px;
     }
     .featured_job_title_hld h1{
         font-size: 26px;

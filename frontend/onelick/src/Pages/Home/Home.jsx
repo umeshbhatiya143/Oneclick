@@ -9,6 +9,7 @@ import About from '../../Component/AboutSection/About'
 import JobCategory from '../../Component/JobCategories/JobCategories'
 import CandidateSection from '../../Component/CandidateSection/CandidateSection'
 import Footer from '../../Component/Footer/Footer'
+import TopCompany from '../../Component/TopCompanyRegistered/TopCompany'
 
 const Home = () => {
   return (
@@ -18,10 +19,11 @@ const Home = () => {
       <ClientShowCase/>
       <Featured_jobs/>
       <About/>
+      <TopCompany/>
       <Testimonial/>
-     <JobCategory/>
-     <CandidateSection/>
-     <Footer/>
+      <JobCategory/>
+      <CandidateSection/>
+      <Footer/>
     
     </div>
   )
