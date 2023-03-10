@@ -7,9 +7,10 @@ import Featured_jobs from '../../Component/Featured_jobs/Featured_jobs'
 import Testimonial from '../../Component/Testimonial/Testimonial'
 import About from '../../Component/AboutSection/About'
 import JobCategory from '../../Component/JobCategories/JobCategories'
-import CandidateSection from '../../Component/CandidateSection/CandidateSection'
+import CandidateSection from '../../Component/FeaturedCandidates/FeaturedCandidates'
 import Footer from '../../Component/Footer/Footer'
 import TopCompany from '../../Component/TopCompanyRegistered/TopCompany'
+import RecentJobs from '../../Component/RecentJobs/RecentJobs'
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
       <TopCompany/>
       <Testimonial/>
       <JobCategory/>
+      <RecentJobs/>
       <CandidateSection/>
       <Footer/>
     

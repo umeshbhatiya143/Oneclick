@@ -1,0 +1,55 @@
+#job_category_container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 150px 100px;
+    gap: 40px;
+}
+.categories_card_hld{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.category_card{
+    display: flex;
+    width: 25%;
+    flex-wrap: wrap;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    align-items: center;
+    gap: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.category_card .job_icon{
+    background-color: #ececf3;
+    border-radius: 10px;
+    padding: 15px;
+    color: #1866d2;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+.category_card:hover .job_icon{
+    background-color: #1866d2;
+    color: #fff;
+}
+.category_card_content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.category_card_content p{
+    font-size: 12px;
+}

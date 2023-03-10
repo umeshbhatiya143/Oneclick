@@ -1,7 +1,7 @@
 import React from 'react'
 import './TopCompany.css'
 import { Swiper, SwiperSlide } from "swiper/react"
-import { Autoplay, Navigation, Pagination, Scrollbar } from "swiper";
+import { Autoplay} from "swiper";
 import "swiper/css";
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
