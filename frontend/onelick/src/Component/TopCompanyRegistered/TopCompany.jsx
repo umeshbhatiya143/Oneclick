@@ -12,18 +12,20 @@ const TopCompany = () => {
     return (
         <section id='top_company_container' >
             {/* top company registered */}
-            <div className="top_company_registered">
+            <div 
+             className="top_company_registered">
                 <div className="top_company_title_hld">
                     <h1>Top Company Registered</h1>
                     <p>Some of the companies we have helped recruit excellent applicants over the years.</p>
                 </div>
 
                 {/* for web view */}
-                <div className="top_company_slider_container">
+                <div   data-aos="fade-up"
+                 className="top_company_slider_container">
 
                     <Swiper
-                        data-aos="fade-up"
-                        data-aos-duration="100s"
+                      
+                        // data-aos-duration="2000"
                         spaceBetween={30}
                         slidesPerView={1}
                         grabCursor={true}

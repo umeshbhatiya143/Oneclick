@@ -142,11 +142,12 @@ export default function Navbar() {
 
                 </div>
                 <div id="n-loginSignup">
-
+                    
+                    <Link to="/login">
                     <div className="n-loginSignup">
                         Login / Register
-
                     </div>
+                    </Link>
                     <div className="n-jobPost">
                         Job Post
                     </div>

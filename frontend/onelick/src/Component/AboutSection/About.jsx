@@ -7,10 +7,14 @@ const About = () => {
     return (
         <section id='about_section'>
             <div className="about_img_content_hld">
-                <div className="about_img_hld">
+                <div data-aos="fade-right"
+                // data-aos-duration="2000"
+                 className="about_img_hld">
                     <img src={aboutImg} alt="" />
                 </div>
-                <div className="about_text_hld">
+                <div data-aos="fade-left"
+                // data-aos-duration="2000"
+                 className="about_text_hld">
                     <h3>Millions of Jobs. Find the one that suits you.</h3>
                     <p>Search all the open positions on the web. Get your own personalized salary estimate. Read reviews on over 600,000 companies worldwide.</p>
                     <ul>
@@ -26,7 +30,9 @@ const About = () => {
             </div>
 
             {/* client count up */}
-            <div className="countUp_client">
+            <div data-aos="fade-up"
+                // data-aos-duration="2000"
+             className="countUp_client">
                 <CountUp
                     start={0}
                     end={4}

@@ -22,11 +22,10 @@ const RecentJobs = () => {
             </div>
 
             {/* slider */}
-            <div className="recent_jobs_carousel">
+            <div data-aos="fade-up"
+                className="recent_jobs_carousel">
 
                 <Swiper
-                    data-aos="fade-up"
-                    data-aos-duration="100s"
                     spaceBetween={30}
                     slidesPerView={1}
                     centeredSlides={true}
@@ -40,11 +39,11 @@ const RecentJobs = () => {
                         disableOnInteraction: false,
                     }}
                     breakpoints={{
-                        600:{
-                            slidesPerView:2
+                        600: {
+                            slidesPerView: 2
                         },
-                        1000:{
-                            slidesPerView:3
+                        1000: {
+                            slidesPerView: 3
                         }
                     }}
                     modules={[Autoplay, Pagination]}
@@ -85,12 +84,13 @@ const RecentJobs = () => {
                                         <BiBookmark size={20} />
                                     </div>
                                 </div>
-                                </SwiperSlide>
-                 ) })
-                }
-                              
-                            </Swiper>
-</div>
+                            </SwiperSlide>
+                        )
+                    })
+                    }
+
+                </Swiper>
+            </div>
         </section>
     )
 }

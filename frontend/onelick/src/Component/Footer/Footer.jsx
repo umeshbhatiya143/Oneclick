@@ -9,13 +9,15 @@ import { FaLinkedinIn } from 'react-icons/fa';
 const Footer = () => {
   return (
     <section id='Footer'>
-      <div className="footer_up">
+      <div data-aos="fade-up"
+        // data-aos-duration="2000"
+        className="footer_up">
         <ul className="logo_address_hld">
           <li className='footer_logo'>
             <img src={logo} alt="logo" />
           </li>
-          <li style={{display:"flex", flexDirection:"column"}}>
-            <span style={{color:"#1967D2"}}>Call us</span>
+          <li style={{ display: "flex", flexDirection: "column" }}>
+            <span style={{ color: "#1967D2" }}>Call us</span>
             <span>123 456 7890</span>
           </li>
           <li>
@@ -107,8 +109,12 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer_down">
-        <p>© 2023 Superio by ib-themes. All Right Reserved.</p>
-        <div className="social_icons">
+        <p data-aos="fade-right"
+          // data-aos-duration="2000"
+        >© 2023 Superio by ib-themes. All Right Reserved.</p>
+        <div data-aos="fade-left"
+          // data-aos-duration="2000"
+          className="social_icons">
           <FaFacebookF />
           <AiOutlineInstagram />
           <AiOutlineTwitter />

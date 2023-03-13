@@ -30,8 +30,8 @@
 }
 
 .footer_up ul p {
-    font-size: 14px;
-    display: flex;
+    font-size: 12px;
+    display: inline-block;
 }
 
 .footer_logo img {
@@ -41,7 +41,7 @@
 
 .footer_links_hld {
     display: flex;
-    gap: 50px;
+    gap: 100px;
 }
 
 .footer_down {

@@ -25,10 +25,10 @@ const Testimonial = () => {
           <img src="https://superio-next.vercel.app/images/resource/testimonial-right.png" alt="" />
         </div>
       </div>
-      <div className="testimonial_carousel">
+      <div data-aos="fade-up"
+        // data-aos-duration="2000"
+        className="testimonial_carousel">
         <Swiper
-          data-aos="fade-up"
-          data-aos-duration="100s"
           spaceBetween={0}
           slidesPerView={1}
           effect={'fade'}

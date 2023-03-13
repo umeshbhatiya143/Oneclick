@@ -96,6 +96,9 @@ nav input,
   gap: 20px;
   /* position: absolute; */
 }
+#n-loginSignup a{
+  all: unset;
+}
 
 .n-loginSignup {
   background-color: #E2EAF8;

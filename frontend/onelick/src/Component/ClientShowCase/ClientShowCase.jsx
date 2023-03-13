@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import './ClientShowCase.css'
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css";
-
 import Octus from '../../assets/octus_logo2.png'
 import Mobigood from '../../assets/mobigood_logo.png'
 import Phoenix from '../../assets/phoenix_logo2.png'
@@ -12,23 +11,10 @@ import Jmax from '../../assets/jmax_logo.png'
 import Growing_roots from '../../assets/growing_roots_logo.png'
 import Qodeleaf from '../../assets/qodeleaf_logo.png'
 import { Autoplay } from "swiper";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 
 
 export default function Slider() {
-
-    useEffect(() => {
-        AOS.init({
-            duration: 600,
-            offset: 0,
-            easing: 'ease-in-out-back',
-            // delay: 50,
-            anchorPlacement: 'top-top'
-        })
-    }, [])
-
-
     return (
         <section className="slider-container-hld">
             
@@ -38,9 +24,8 @@ export default function Slider() {
                     <span data-aos="fade-up">Trusted By</span>
 
                     <Swiper
-
-                        data-aos="fade-up"
-                        data-aos-duration="100s"
+                     data-aos="fade-up"
+                    //  data-aos-duration="100s"
                         spaceBetween={0}
                         slidesPerView={5}
                         grabCursor={true}
