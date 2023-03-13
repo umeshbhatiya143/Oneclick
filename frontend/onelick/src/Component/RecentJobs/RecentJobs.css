@@ -57,3 +57,9 @@
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
     }
+
+@media screen and (max-width: 1000px){
+    #recent_jobs_container{
+        padding: 20px;
+    }
+}

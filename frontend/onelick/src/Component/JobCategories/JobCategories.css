@@ -53,3 +53,21 @@
 .category_card_content p{
     font-size: 12px;
 }
+
+@media screen and (max-width: 1000px) {
+    #job_category_container{
+        padding: 50px 20px;
+    }
+    .category_card{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .category_card{
+        width: 100%;
+    }
+    .heading_hld h1{
+        font-size: 26px;
+    }
+}

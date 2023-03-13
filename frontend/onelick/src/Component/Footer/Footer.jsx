@@ -14,8 +14,8 @@ const Footer = () => {
           <li className='footer_logo'>
             <img src={logo} alt="logo" />
           </li>
-          <li>
-            <span>Call us</span>
+          <li style={{display:"flex", flexDirection:"column"}}>
+            <span style={{color:"#1967D2"}}>Call us</span>
             <span>123 456 7890</span>
           </li>
           <li>

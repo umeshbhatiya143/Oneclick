@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import logo from '../../assets/logo.png'
 import './Navbar.css'
 import $ from 'jquery';
-import { Link } from 'react-scroll'
+import { Link } from 'react-router-dom'
 import { AiOutlineUser } from 'react-icons/ai';
 import { RxCrossCircled } from 'react-icons/rx';
 import { FaFacebookF } from 'react-icons/fa';
@@ -144,7 +144,6 @@ export default function Navbar() {
                 <div id="n-loginSignup">
 
                     <div className="n-loginSignup">
-
                         Login / Register
 
                     </div>

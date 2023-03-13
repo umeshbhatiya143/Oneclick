@@ -3,6 +3,7 @@
     width: 44%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 20px;
     border: 1px solid rgb(229, 228, 228);
     border-radius: 10px;
@@ -15,6 +16,7 @@
 .featured_candidates_left{
     display: flex;
     gap: 20px;
+    /* flex-wrap:wrap ; */
 }
 .candidate_photo{
   width: 80px;
@@ -51,3 +53,24 @@
     background-color: #1b52a0;
     cursor: pointer;
 }
+
+@media screen and (max-width:1000px){
+    #Featured_candidates{
+        width: 100%;
+    }
+}
+ @media screen and (max-width:600px){
+    #Featured_candidates{
+       justify-content: center;
+    }
+    .featured_candidates_left{
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .candidate_content_hld{
+        justify-content: center;
+        align-items: center;
+    }
+ }
