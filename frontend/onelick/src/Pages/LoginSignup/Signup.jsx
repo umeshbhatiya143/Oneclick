@@ -12,7 +12,7 @@ import { BiBriefcase } from 'react-icons/bi';
 import "react-toastify/dist/ReactToastify.css"
 import {ToastContainer,toast} from "react-toastify";
 
-const Signup = () => {
+const Signup = ({showLoginForm, setshowLoginForm, showSignupForm, setshowSignupForm}) => {
     const [values, setValues] = useState({
         email: "",
         password: "",
@@ -66,8 +66,10 @@ const Signup = () => {
 
     return (
         <section id="login-page">
-            <div className="login-container">
-                <div className="login_close">
+            <div data-aos="fade-down"
+          data-aos-easing="ease"
+             className="login-container">
+                <div className="login_close" onClick={()=>{setshowSignupForm(!showSignupForm)}}>
                     <span><RxCross2 size={20} /></span>
                 </div>
                 <form action="" onSubmit={(e) => handleRegister(e)}>
@@ -128,9 +130,12 @@ const Signup = () => {
                 </form>
                 <div className="call-to-action">
                     <p>Already have an account?</p>
-                    <Link to="/login" className="btn-secondary">
+                    <span className="btn-secondary" onClick={()=>{
+                        setshowSignupForm(!showSignupForm)
+                        setshowLoginForm(!showLoginForm)
+                    }}>
                         LogIn
-                    </Link>
+                    </span>
                 </div>
                 <span className="span_or"><p>or</p></span>
                 <div className="login_direct">

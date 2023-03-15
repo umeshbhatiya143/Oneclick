@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/logo.png"; // Replace with your own logo image
 // import GoogleLogin from "react-google-login";
@@ -8,38 +8,38 @@ import { FaFacebookF } from 'react-icons/fa';
 import { AiOutlineGoogle } from 'react-icons/ai';
 import { RxCross2 } from 'react-icons/rx';
 import "react-toastify/dist/ReactToastify.css"
-import {ToastContainer,toast} from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 
-const Login = () => {
-    const [values, setValues] = useState({
-        email:"",
-        password:"",
-    });
+const Login = ({showLoginForm, setshowLoginForm, showSignupForm, setshowSignupForm}) => {
+  const [values, setValues] = useState({
+    email: "",
+    password: "",
+  });
 
-    // toastify
-    const toastOptions = {
-      position: "bottom-right",
-      autoClose: 1000,
-      pauseOnHover:true,
-      draggable:true,
-      theme:"dark",
+  // toastify
+  const toastOptions = {
+    position: "bottom-right",
+    autoClose: 1000,
+    pauseOnHover: true,
+    draggable: true,
+    theme: "dark",
   }
- 
-  const handleValidation = () =>{
-      const{ password, username} = values;
-      if(password === ""){
-         toast.error("Email and Password is required", toastOptions);
-         return false;
-      }else if(username.length === ""){
-         toast.error("Email and Password is required", toastOptions);
-         return false;
-      }
-      return true;
- };
 
-    const handleChange = (event) => {
-        setValues({...values, [event.target.name]:event.target.value});
-    };
+  const handleValidation = () => {
+    const { password, username } = values;
+    if (password === "") {
+      toast.error("Email and Password is required", toastOptions);
+      return false;
+    } else if (username.length === "") {
+      toast.error("Email and Password is required", toastOptions);
+      return false;
+    }
+    return true;
+  };
+
+  const handleChange = (event) => {
+    setValues({ ...values, [event.target.name]: event.target.value });
+  };
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -59,15 +59,18 @@ const Login = () => {
   const handleLoginFailure = (error) => {
     // TODO: Handle login failure here
   };
-
+ 
+ 
   return (
     <section id="login-page">
-      <div className="login-container">
-      <div className="login_close">
-          <span><RxCross2 size={20}/></span>
+      <div data-aos="fade-down"
+          data-aos-easing="ease"
+          className="login-container">
+        <div className="login_close" onClick={()=>setshowLoginForm(!showLoginForm)}>
+          <span><RxCross2 size={20} /></span>
         </div>
-        <form action="" onSubmit={(e)=>handleLogin(e)}>
-       
+        <form action="" onSubmit={(e) => handleLogin(e)}>
+
           <h3>Login to onelick</h3>
           <div className="form-group">
             <label htmlFor="email">Username:</label>
@@ -78,7 +81,7 @@ const Login = () => {
               value={values.email}
               onChange={handleChange}
               placeholder="Username"
-     
+
             />
           </div>
           <div className="form-group">
@@ -90,7 +93,7 @@ const Login = () => {
               value={values.password}
               onChange={handleChange}
               placeholder="Password"
-             
+
             />
           </div>
           <div className="forgot_checkbox_hld">
@@ -104,7 +107,7 @@ const Login = () => {
           </div>
           <button type="submit" className="btn-primary">
             Login
-            </button>
+          </button>
           {/* <div className="form-group">
             <GoogleLogin
               clientId="YOUR_GOOGLE_CLIENT_ID"
@@ -125,9 +128,12 @@ const Login = () => {
         </form>
         <div className="call-to-action">
           <p>Don't have an account?</p>
-          <Link to="/signup" className="btn-secondary">
+          <span className="btn-secondary" onClick={()=>{
+            setshowLoginForm(!showLoginForm)
+            setshowSignupForm(!showSignupForm)
+          }}>
             Signup
-          </Link>
+          </span>
         </div>
         <span className="span_or"><p>or</p></span>
         <div className="login_direct">
@@ -138,9 +144,9 @@ const Login = () => {
             <AiOutlineGoogle /> Login via Google
           </div>
         </div>
+      <ToastContainer />
       </div>
-      <ToastContainer/>
-    </section>
+    </section> 
   );
 };
 

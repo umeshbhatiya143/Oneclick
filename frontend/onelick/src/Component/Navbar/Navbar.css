@@ -195,6 +195,23 @@ nav input,
   margin-top: 20px;
 }
 
+/* nav login container */
+.nav_login_container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  z-index: 1001;
+  transition: all 1s ease-in-out ;
+  /*padding-top: 80px;
+  */background-color: rgba(0,0, 0, 0.5);
+  height: 100vh;
+  -webkit-transition: all 1s ease-in-out ;
+  -moz-transition: all 1s ease-in-out ;
+  -ms-transition: all 1s ease-in-out ;
+  -o-transition: all 1s ease-in-out ;
+}
+
 @media only screen and (max-width: 1200px) {
   nav {
     padding: 0;
