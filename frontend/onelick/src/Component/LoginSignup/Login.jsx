@@ -66,8 +66,8 @@ const Login = ({showLoginForm, setshowLoginForm, showSignupForm, setshowSignupFo
       <div data-aos="fade-down"
           data-aos-easing="ease"
           className="login-container">
-        <div className="login_close" onClick={()=>setshowLoginForm(!showLoginForm)}>
-          <span><RxCross2 size={20} /></span>
+        <div className="login_close" >
+          <span onClick={()=>setshowLoginForm(!showLoginForm)}><RxCross2 size={20} /></span>
         </div>
         <form action="" onSubmit={(e) => handleLogin(e)}>
 

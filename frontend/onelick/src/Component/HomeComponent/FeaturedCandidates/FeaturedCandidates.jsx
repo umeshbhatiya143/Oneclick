@@ -5,8 +5,8 @@ import { TbClockHour4 } from 'react-icons/tb';
 import { CiLocationOn } from 'react-icons/ci';
 import { GiCash } from 'react-icons/gi';
 import { BiBookmark } from 'react-icons/bi';
-import candidatePhoto from '../../assets/member2.jpg'
-import Data from "../../Json_data/job.json"
+import candidatePhoto from '../../../assets/member2.jpg'
+import Data from "../../../Json_data/job.json"
 
 
 const FeaturedCandidates = () => {

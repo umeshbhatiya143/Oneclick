@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import aboutImg from '../../assets/aboutImage.jpg'
+import aboutImg from '../../../assets/aboutImage.jpg'
 import CountUp from 'react-countup';
 
 const About = () => {

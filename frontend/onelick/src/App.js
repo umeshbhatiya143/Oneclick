@@ -4,6 +4,7 @@ import Home from './Pages/Home/Home';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import FindJobs from './Pages/FindJobs/FindJobs';
 
 function App() {
 
@@ -22,8 +23,8 @@ function App() {
       <Routes>
         <Route>
           <Route path='/' element={<Home/>} />
-          {/* <Route path="login" element={<Login/>} />
-          <Route path="signup" element={<Signup/>} /> */}
+          <Route path="findjobs" element={<FindJobs/>} />
+          {/* <Route path="signup" element={<Signup/>} /> */}
         </Route>
       </Routes>
     </BrowserRouter>

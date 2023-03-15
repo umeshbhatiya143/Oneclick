@@ -69,8 +69,8 @@ const Signup = ({showLoginForm, setshowLoginForm, showSignupForm, setshowSignupF
             <div data-aos="fade-down"
           data-aos-easing="ease"
              className="login-container">
-                <div className="login_close" onClick={()=>{setshowSignupForm(!showSignupForm)}}>
-                    <span><RxCross2 size={20} /></span>
+                <div className="login_close" >
+                    <span onClick={()=>{setshowSignupForm(!showSignupForm)}}><RxCross2 size={20} /></span>
                 </div>
                 <form action="" onSubmit={(e) => handleRegister(e)}>
                     <h3>Create an Account</h3>

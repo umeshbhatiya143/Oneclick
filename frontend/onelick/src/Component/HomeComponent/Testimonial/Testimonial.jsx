@@ -1,8 +1,8 @@
 import React from 'react'
 import './Testimonial.css'
-import client_photo from '../../assets/client_photo.jpg'
-import client_photo2 from '../../assets/member1.jpg'
-import client_photo3 from '../../assets/member2.jpg'
+import client_photo from '../../../assets/client_photo.jpg'
+import client_photo2 from '../../../assets/member1.jpg'
+import client_photo3 from '../../../assets/member2.jpg'
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Autoplay, EffectFade, Pagination } from "swiper";
 import "swiper/css";

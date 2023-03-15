@@ -2,14 +2,14 @@ import React, { useEffect } from "react";
 import './ClientShowCase.css'
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css";
-import Octus from '../../assets/octus_logo2.png'
-import Mobigood from '../../assets/mobigood_logo.png'
-import Phoenix from '../../assets/phoenix_logo2.png'
-import FuteServices from '../../assets/futeServices_logo.png'
-import MasterBrains from '../../assets/masterbrain_logo2.png'
-import Jmax from '../../assets/jmax_logo.png'
-import Growing_roots from '../../assets/growing_roots_logo.png'
-import Qodeleaf from '../../assets/qodeleaf_logo.png'
+import Octus from '../../../assets/octus_logo2.png'
+import Mobigood from '../../../assets/mobigood_logo.png'
+import Phoenix from '../../../assets/phoenix_logo2.png'
+import FuteServices from '../../../assets/futeServices_logo.png'
+import MasterBrains from '../../../assets/masterbrain_logo2.png'
+import Jmax from '../../../assets/jmax_logo.png'
+import Growing_roots from '../../../assets/growing_roots_logo.png'
+import Qodeleaf from '../../../assets/qodeleaf_logo.png'
 import { Autoplay } from "swiper";
 
 

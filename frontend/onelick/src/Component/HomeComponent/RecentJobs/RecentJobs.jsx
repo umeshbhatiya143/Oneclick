@@ -9,8 +9,8 @@ import { TbClockHour4 } from 'react-icons/tb';
 import { CiLocationOn } from 'react-icons/ci';
 import { GiCash } from 'react-icons/gi';
 import { BiBookmark } from 'react-icons/bi';
-import logoImg from '../../assets/company_logo1.png'
-import Data from "../../Json_data/job.json"
+import logoImg from '../../../assets/company_logo1.png'
+import Data from "../../../Json_data/job.json"
 
 
 const RecentJobs = () => {

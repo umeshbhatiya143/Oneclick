@@ -1,6 +1,6 @@
 import React from 'react'
 import './LandingPage.css'
-import Banner from '../../assets/banner_img.png'
+import Banner from '../../../assets/banner_img.png'
 import { AiOutlineSearch } from 'react-icons/ai';
 import { HiOutlineMapPin } from 'react-icons/hi2';
 

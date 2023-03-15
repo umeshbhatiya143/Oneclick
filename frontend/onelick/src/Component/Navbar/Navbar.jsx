@@ -9,8 +9,8 @@ import { FaFacebookF } from 'react-icons/fa';
 import { AiOutlineInstagram } from 'react-icons/ai';
 import { AiOutlineTwitter } from 'react-icons/ai';
 import { FaLinkedinIn } from 'react-icons/fa';
-import Login from "../../Pages/LoginSignup/Login";
-import Signup from "../../Pages/LoginSignup/Signup";
+import Login from "../LoginSignup/Login";
+import Signup from "../LoginSignup/Signup";
 
 export default function Navbar() {
     const [navToggle, setnavToggle] = useState(true)
@@ -85,7 +85,7 @@ export default function Navbar() {
                         {/* <!-- about --> */}
                         <div id="n-findJobs">
 
-                            <Link to="findJobs" spy={true} smooth={true} className="n_link">
+                            <Link to="findjobs" spy={true} smooth={true} className="n_link">
                                 Find Jobs
                             </Link>
 
