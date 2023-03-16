@@ -1,6 +1,7 @@
 #about_section{
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 .about_img_content_hld{
     margin-top: 120px;

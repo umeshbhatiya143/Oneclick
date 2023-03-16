@@ -9,6 +9,7 @@
     -moz-border-radius: 50% 50% 0 0 / 13% 13% 0 0;
     -ms-border-radius: 50% 50% 0 0 / 13% 13% 0 0;
     -o-border-radius: 50% 50% 0 0 / 13% 13% 0 0;
+    overflow: hidden;
 }
 
 .footer_up {

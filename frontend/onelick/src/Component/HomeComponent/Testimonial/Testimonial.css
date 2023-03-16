@@ -1,5 +1,6 @@
 #Testimonial_container {
     padding: 250px 0;
+    overflow: hidden;
 }
 
 .testimonial_up {

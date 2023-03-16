@@ -5,6 +5,7 @@
     align-items: center;
     padding: 150px 100px;
     gap: 40px;
+    overflow: hidden;
 }
 .categories_card_hld{
     display: flex;
