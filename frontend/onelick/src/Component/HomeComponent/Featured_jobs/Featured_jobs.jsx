@@ -6,7 +6,9 @@ import { CiLocationOn } from 'react-icons/ci';
 import { GiCash } from 'react-icons/gi';
 import { BiBookmark } from 'react-icons/bi';
 import logoImg from '../../../assets/company_logo1.png'
-import Data from "../../../Json_data/job.json"
+// import Data from "../../../Json_data/job.json"
+import { slice } from 'lodash';
+import { Link } from 'react-router-dom';
 
 
 const Featured_jobs = () => {
@@ -14,22 +16,36 @@ const Featured_jobs = () => {
     var flag = true;
     const currDate = new Date().toLocaleDateString();
     const currTime = new Date().toLocaleTimeString();
-    // console.log(Data)
+
+
+    const [FeaturedJobs, setFeaturedJobs] = useState([])
+    const data = slice(FeaturedJobs, 0, 6)
+
+    const getData = () => {
+        fetch(process.env.REACT_APP_JOB_POSTED)
+            .then((res) => res.json())
+            .then((json) => setFeaturedJobs(json))
+            .catch((e) => console.log(e))
+    }
+
+    useEffect(() => {
+        getData()
+    }, [])
 
     return (
         <div id='Featured_container'>
             <div className='Featured_jobs_categories_hld'>
                 <div className="featured_job_title_hld">
                     <h1 data-aos="fade-up"
-                        // data-aos-duration="1000"
-                        >Featured Jobs</h1>
+                    // data-aos-duration="1000"
+                    >Featured Jobs</h1>
                     <p data-aos="fade-up"
                         // data-aos-duration="1000"
                         data-aos-delay="200">Know your Worth and find the job that qualify your life</p>
                 </div>
                 <div data-aos="fade-up"
-                // data-aos-duration="2000"
-                 className="featured_categories_hld">
+                    // data-aos-duration="2000"
+                    className="featured_categories_hld">
                     <select name="" id="featured_categories">
                         <option value="">All Categories</option>
                         <option value="">category 1</option>
@@ -42,7 +58,7 @@ const Featured_jobs = () => {
                 // data-aos-duration="2000"
                 data-aos-delay="200"
                 className='Featured_jobs_hld'>
-                {Data && Data.map((data) => {
+                {data && data.map((data) => {
                     return (
                         <div
                             key={data.id} id="Featured_jobs">
@@ -95,7 +111,9 @@ const Featured_jobs = () => {
             <div data-aos="fade-up"
                 // data-aos-duration="2000"
                 className="load_more_button">
+                    <Link to="findjobs">
                 <button>Load More Listing</button>
+                </Link>
             </div>
         </div>
     )

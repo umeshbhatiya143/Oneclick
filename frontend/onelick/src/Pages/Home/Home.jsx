@@ -15,7 +15,7 @@ import RecentJobs from '../../Component/HomeComponent/RecentJobs/RecentJobs'
 const Home = () => {
   return (
     <div className='Home_container'>
-      <Navbar/>
+      {/* <Navbar/> */}
       <Landingpage/>
       <ClientShowCase/>
       <Featured_jobs/>
@@ -25,7 +25,7 @@ const Home = () => {
       <JobCategory/>
       <RecentJobs/>
       <CandidateSection/>
-      <Footer/>
+      {/* <Footer/> */}
     
     </div>
   )

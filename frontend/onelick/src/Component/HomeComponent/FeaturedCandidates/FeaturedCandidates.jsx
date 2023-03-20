@@ -6,10 +6,25 @@ import { CiLocationOn } from 'react-icons/ci';
 import { GiCash } from 'react-icons/gi';
 import { BiBookmark } from 'react-icons/bi';
 import candidatePhoto from '../../../assets/member2.jpg'
-import Data from "../../../Json_data/job.json"
+// import Data from "../../../Json_data/job.json"
+import { slice } from 'lodash';
+import { Link } from 'react-router-dom';
 
 
 const FeaturedCandidates = () => {
+  const [candidates, setcandidates] = useState([])
+  const data = slice(candidates, 0, 6)
+
+  const getData = () => {
+    fetch(process.env.REACT_APP_JOB_POSTED)
+      .then((res) => res.json())
+      .then((data) => setcandidates(data))
+      .catch((e) => console.log(e))
+  }
+
+  useEffect(() => {
+    getData();
+  }, [])
 
   return (
     <div id='Featured_container'>
@@ -22,7 +37,7 @@ const FeaturedCandidates = () => {
       <div data-aos="fade-up"
         // data-aos-duration="2000"
         className='Featured_jobs_hld'>
-        {Data && Data.map((data) => {
+        {data && data.map((data) => {
           return (
             <div key={data.id} id="Featured_candidates">
               <div className='featured_candidates_left'>
@@ -44,9 +59,13 @@ const FeaturedCandidates = () => {
         })
         }
       </div>
-      {/* <div className="load_more_button">
-        <button>Load More Listing</button>
-      </div> */}
+      <div data-aos="fade-up"
+        // data-aos-duration="2000"
+        className="load_more_button">
+        <Link to="candidates">
+          <button>Load More Listing</button>
+        </Link>
+      </div>
     </div>
   )
 }

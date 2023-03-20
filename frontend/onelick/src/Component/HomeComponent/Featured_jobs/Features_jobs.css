@@ -50,22 +50,30 @@
     gap: 20px;
     border: 1px solid rgb(229, 228, 228);
     border-radius: 10px;
+    box-shadow: 5px 10px 5px 5px solid dimgray;
     padding: 25px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    transition: all.3s ease-in-out;
+    -webkit-transition: all.3s ease-in-out;
+    -moz-transition: all.3s ease-in-out;
+    -ms-transition: all.3s ease-in-out;
+    -o-transition: all.3s ease-in-out;
+}
+#Featured_jobs:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .job_content_hld {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 8px;
+    justify-content: space-between;
 }
-.addToFavourite{
-   position: relative;
-   right: -50px;
-}
+
 .job_details_row1,
 .job_details_row2 {
     display: flex;
@@ -95,13 +103,14 @@
     -o-border-radius: 20px;
 }
 
-.load_more_button{
+.load_more_button {
     margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.load_more_button button{
+
+.load_more_button button {
     padding: 15px 20px;
     cursor: pointer;
     border-radius: 5px;
@@ -114,9 +123,11 @@
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
-.load_more_button button:hover{
+
+.load_more_button button:hover {
     background-color: #1b52a0;
 }
+
 @media screen and (max-width: 1350px) {
     #Featured_container {
         padding: 40px 20px;
@@ -127,20 +138,20 @@
     #Featured_jobs {
         width: 100%;
     }
-    .addToFavourite {
-        position: absolute;
-        right: 40px;
-    }
-    .featured_job_title_hld h1{
+
+    .featured_job_title_hld h1 {
         font-size: 26px;
     }
-    .featured_job_title_hld p{
+
+    .featured_job_title_hld p {
         font-size: 14px;
     }
-    .job_content_hld h3{
+
+    .job_content_hld h3 {
         font-size: 18px;
     }
-    .job_content_hld p{
+
+    .job_content_hld p {
         font-size: 13px;
     }
 }
@@ -149,6 +160,7 @@
     #Featured_container {
         margin-top: 0;
     }
+
     .Featured_jobs_categories_hld {
         flex-direction: column;
         gap: 40px;
@@ -157,15 +169,13 @@
     #featured_categories {
         width: 100%;
     }
-    .addToFavourite {
-        position:static;
-        right: 20px;
-    }
+
     #Featured_jobs {
-         padding: 15px;
+        padding: 15px;
     }
+
     .job_details_row1,
-.job_details_row2 {
- gap: 15px;
-}
+    .job_details_row2 {
+        gap: 15px;
+    }
 }

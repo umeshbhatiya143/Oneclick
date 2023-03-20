@@ -77,7 +77,7 @@ export default function Navbar() {
                         </div>
                         <div id="n-home">
 
-                            <Link to="dummy" spy={true} smooth={true} className="n_link">
+                            <Link to="/" spy={true} smooth={true} className="n_link">
                                 Home
                             </Link>
 
@@ -93,7 +93,7 @@ export default function Navbar() {
 
                         <div id="n-Employers">
 
-                            <Link to="services" spy={true} smooth={true} className="n_link">
+                            <Link to="employers" spy={true} smooth={true} className="n_link">
                                 Employers
                             </Link>
 
@@ -101,23 +101,26 @@ export default function Navbar() {
 
                         <div id="n-Candidates">
 
-                            <Link to="portfolio" spy={true} smooth={true} className="n_link">
+                            <Link to="candidates" spy={true} smooth={true} className="n_link">
                                 Candidates
                             </Link>
 
                         </div>
                         <div id="n-Blog" style={{ textAlign: 'center' }}>
 
-                            <a href="/ourstory" className="n_link" style={{ textAlign: 'center' }}>
+                            {/* <a href="blogs" className="n_link" style={{ textAlign: 'center' }}>
                                 Blog
-                            </a>
+                            </a> */}
+                            <Link to="blogs" className="n_link">
+                                Blogs
+                            </Link>
 
                         </div>
                         <div id="contacto" style={{ textAlign: 'center' }}>
 
-                            <a href="/ourstory" className="n_link" style={{ textAlign: 'center' }}>
+                            {/* <a href="/ourstory" className="n_link" style={{ textAlign: 'center' }}>
                                 Contact Us
-                            </a>
+                            </a> */}
 
                         </div>
 

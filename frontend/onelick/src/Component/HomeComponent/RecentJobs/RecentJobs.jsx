@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import './RecentJobs.css'
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Autoplay, Pagination } from "swiper";
@@ -10,10 +10,24 @@ import { CiLocationOn } from 'react-icons/ci';
 import { GiCash } from 'react-icons/gi';
 import { BiBookmark } from 'react-icons/bi';
 import logoImg from '../../../assets/company_logo1.png'
-import Data from "../../../Json_data/job.json"
+// import Data from "../../../Json_data/job.json"
+import { slice } from 'lodash';
 
 
 const RecentJobs = () => {
+    const [recentJobs, setrecentJobs] = useState([])
+  
+    const getData = () => {
+      fetch(process.env.REACT_APP_JOB_POSTED)
+        .then((res) => res.json())
+        .then((data) => setrecentJobs(data))
+        .catch((e) => console.log(e))
+    }
+
+    useEffect(() => {
+    getData()
+    }, [])
+
     return (
         <section id="recent_jobs_container">
             <div className="heading_hld">
@@ -49,7 +63,7 @@ const RecentJobs = () => {
                     modules={[Autoplay, Pagination]}
                     className="Recent_jobs_hld"
                 >
-                    {Data && Data.map((data) => {
+                    {recentJobs && recentJobs.map((data) => {
                         return (
                             <SwiperSlide>
                                 <div key={data.id} id="Recent_jobs">

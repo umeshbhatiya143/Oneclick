@@ -1,0 +1,379 @@
+#FindJobs {
+    padding-top: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+/* some properties are inherited from landing page */
+.job_search_hld {
+    width: 100%;
+    background-color: #E7EDFA;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.job_search_area {
+    position: relative;
+    background: #fff;
+    border: 1px solid #ecedf2;
+    box-shadow: 5px 7px 18px rgb(64 79 104 / 50%);
+    border-radius: 100px;
+    width: 950px;
+    margin-bottom: 22px;
+    padding: 20px 20px 20px 30px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    margin-bottom: 30px;
+}
+.form_group select {
+    max-width: 100%;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: gray;
+}
+
+select::backdrop{
+    background-color: #DC3545;
+}
+
+/*---------------------- filter_and_jobs_hld ----------------------------*/
+
+.filter_and_jobs_hld{
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 40px;
+}
+
+/*----------------------------------left filter------------------------------------*/
+
+.left_filter{
+    width: 20%;
+    background-color: #E7EDFA;
+    border-radius: 8px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+.left_filter ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: all .3s ease;
+}
+.left_filter ul li{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-size: 10px;
+}
+.left_filter .view_more_experience{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.left_filter .view_more_exp_btn:hover,
+.left_filter .view_more_exp_btn:hover p{
+    color: #1967D2;
+    cursor: pointer;
+}
+/* left_filter ul li p{
+    font-size: 14px;
+} */
+
+/* toggle button */
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 19px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border: 1px solid lightgray;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #ccc;
+    
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #1967D2;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #1967D2;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    -o-transform: translateX(20px);
+}
+
+/* Rounded sliders inside toggle button*/
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+.left_filter .tags{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.left_filter .tags p{
+    padding: 5px 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+/*--------------------------------------right portion----------------------------*/
+
+/* rest properties of this portion are inherited from featured jobs page */
+.jobs_container_hld{
+    width: 55%;
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+}
+.right_filters_hld{
+    /* width: 100%; */
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+}
+.right_filters_hld .clearAll{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #DC3545;
+    color: #fff;
+    font-size: 15px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.right_filters_hld select{
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+select:focus{
+    outline: none;
+}
+.jobs_hld{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+}
+#find_jobs_page_job_hld{
+    /*width: 100%;
+    */display: flex;
+    gap: 20px;
+    border: 1px solid rgb(229, 228, 228);
+    border-radius: 10px;
+    padding: 25px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.jobs_load_more_btn_hld{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.jobs_load_more_btn_hld span{
+    color: #1967D2;
+    font-size: 16px;
+}
+.jobs_load_more_btn_hld input{
+    width: 30%;
+    height: 7px;
+}
+.jobs_load_more_btn{
+    padding: 8px 18px;
+    background-color: #1967D2;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.jobs_load_more_btn:hover{
+    cursor: pointer;
+    background-color: #1b52a0;
+}
+.jobs_load_more_done{
+    color: #1967D2;
+    border: none;
+    background: none;
+    font-size: 18px;
+}
+.salary_range{
+    display: flex;
+    flex-direction: column;
+}
+.salary_range input{
+    width: 100%;
+}
+.salary_range span{
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 5px 20px;
+    color: #1967D2;
+    font-size: 16px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+@media screen and (max-width:1000px) {
+    .right_filters_hld select{
+        padding: 5px 10px;
+    }
+    .right_filters_hld .clearAll{
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+    .job_search_area {
+        width: 100%;
+        padding: 0;
+        min-width: 50px;
+        display: flex;
+        flex-direction: column;
+        background: none;
+        box-shadow: none;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border: none;
+    }
+    .job_search_area form{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+    .job_search_form_row {
+        flex-direction: column;
+        background: none;
+        gap: 30px;
+    }
+
+    .form_group {
+        border: none;
+        background-color: #ffffff;
+        padding: 15px 20px;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+    }
+
+    .form_group input {
+        width: 100%;
+        padding: 15px;
+    }
+    .left_filter{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:700px) {
+  .filter_and_jobs_hld{
+    flex-direction: column;
+  }
+  .left_filter{
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+}

@@ -28,12 +28,12 @@ const Landingpage = () => {
                <form action="" method="">
                   <div className="job_search_form_row">
                      <div className="form_group">
-                        <AiOutlineSearch size={30} />
+                        <AiOutlineSearch color='gray' size={30} />
                         <input type="text" name="" id="" placeholder='Job title, keywords, or company' />
 
                      </div>
                      <div className="form_group">
-                        <HiOutlineMapPin size={30} />
+                        <HiOutlineMapPin color='gray' size={30} />
                         <input type="text" name="" id="" placeholder='City or postcode' />
 
                      </div>

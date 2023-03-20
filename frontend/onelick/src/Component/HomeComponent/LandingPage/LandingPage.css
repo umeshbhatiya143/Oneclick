@@ -49,15 +49,17 @@
     -ms-border-radius: 100px;
     -o-border-radius: 100px;
     margin-bottom: 30px;
+    width: 100%;
+}
+.job_search_form form{
+    width: 100%;
 }
 .job_search_form_row{
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
+  
     display: flex;
     flex-wrap: wrap;
-    margin-top: calc(-1*var(--bs-gutter-y));
-    margin-right: calc(-.5*var(--bs-gutter-x));
-    margin-left: calc(-.5*var(--bs-gutter-x));
+
+    width: 100%;
 }
 .form_group{
     display: flex;
