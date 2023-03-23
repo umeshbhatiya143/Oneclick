@@ -32,9 +32,9 @@ function App() {
           <Route>
             <Route path='/' element={<Home />} />
             <Route path="findjobs" element={<FindJobs />} />
-            <Route path="employers" element={<Employers/>} />
-            <Route path="candidates" element={<Candidates/>} />
-            <Route path="blogs" element={<Blogs/>} />
+            <Route exact path="employers/*" element={<Employers />} />
+            <Route path="candidates" element={<Candidates />} />
+            <Route path="blogs" element={<Blogs />} />
           </Route>
         </Routes>
 

@@ -1,0 +1,10 @@
+#Dashboard-container{
+    background-color: #E2EAF8;
+    margin-top: 70px;
+    display:  flex;
+    gap: 50px;
+}
+.dashboard-container-sidebar{
+    height: 700px;
+    overflow: scroll;
+}

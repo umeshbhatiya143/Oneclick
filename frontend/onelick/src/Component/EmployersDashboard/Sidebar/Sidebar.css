@@ -1,0 +1,44 @@
+#dashboard_menu{
+    padding: 30px 40px;
+    background-color: #fff;
+
+}
+#dashboard_menu ul{
+    display:  flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#dashboard_menu ul li{
+    display: flex;
+    padding: 15px 25px;
+    border-radius: 8px;
+    transition: all .3s ease-in-out;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+#dashboard_menu ul li p{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    gap: 20px;
+    font-weight:400;
+}
+#dashboard_menu ul li:hover{
+    background-color: #E2EAF8;
+    cursor: pointer;
+}
+#dashboard_menu ul li:hover p{
+    color: #1967D2 !important;
+}
+
+/* for highliting selected components */
+.highlight{
+    background-color: #E2EAF8;
+    color: #1967D2 !important;
+}
