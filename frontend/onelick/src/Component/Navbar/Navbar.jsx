@@ -50,7 +50,7 @@ export default function Navbar() {
             <nav id="header" className="glass">
                 <div id="nav-container">
                     <div id="logo-holder">
-                        <Link to="hero-home" spy={true} smooth={true} className="link">
+                        <Link to="/"  className="n_link">
                             <img id="logo" src={logo} alt="" />
                         </Link>
 
@@ -68,7 +68,7 @@ export default function Navbar() {
 
                     <div id="nav-items-holder" className="nav-options-active mobile_close">
                         <div id="mobile-menu-logo">
-                            <Link to="hero-home" spy={true} smooth={true} className="link">
+                            <Link to="/"  className="n_link">
                                 <img id="logo" src={logo} alt="" />
                             </Link>
                             <div id="menu_close" className="menu_close">
@@ -77,7 +77,7 @@ export default function Navbar() {
                         </div>
                         <div id="n-home">
 
-                            <Link to="/" spy={true} smooth={true} className="n_link">
+                            <Link to="/"  className="n_link">
                                 Home
                             </Link>
 
@@ -85,7 +85,7 @@ export default function Navbar() {
                         {/* <!-- about --> */}
                         <div id="n-findJobs">
 
-                            <Link to="findjobs" spy={true} smooth={true} className="n_link">
+                            <Link to="findjobs"  className="n_link">
                                 Find Jobs
                             </Link>
 
@@ -93,7 +93,7 @@ export default function Navbar() {
 
                         <div id="n-Employers">
 
-                            <Link to="employers" spy={true} smooth={true} className="n_link">
+                            <Link to="employers"  className="n_link">
                                 Employers
                             </Link>
 
@@ -101,7 +101,7 @@ export default function Navbar() {
 
                         <div id="n-Candidates">
 
-                            <Link to="candidates" spy={true} smooth={true} className="n_link">
+                            <Link to="candidates"  className="n_link">
                                 Candidates
                             </Link>
 
@@ -127,7 +127,7 @@ export default function Navbar() {
                         {/* for mobile-menu */}
 
                         <div id="n-dashboard">
-                            <Link to="dashboard" spy={true} smooth={true} className="n_link">
+                            <Link to="dashboard"  className="n_link">
                                 Dashboard
                             </Link>
                         </div>

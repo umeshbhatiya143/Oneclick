@@ -22,9 +22,15 @@ const Sidebar = () => {
     return (
         <div id="dashboard_menu">
             <ul>
-                <li className={location.pathname === "/employers/dashboard" ? "highlight" : ""}>
+                <li className={location.pathname === "/employers/dashboard" ? "highlight" : ""
+                    ||
+                    location.pathname === "/employers" ? "highlight" : ""
+                }>
                     <Link to="dashboard">
-                        <p className={location.pathname === "/employers/dashboard" ? "highlight" : ""}>
+                        <p className={location.pathname === "/employers/dashboard" ? "highlight" : ""
+                            ||
+                            location.pathname === "/employers" ? "highlight" : ""
+                        }>
                             <MdOutlineHome size={20} />
                             Dashboard
                         </p>

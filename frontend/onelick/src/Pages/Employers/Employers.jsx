@@ -24,7 +24,7 @@ const Employers = () => {
       <Sidebar />
       </div>
      
-
+      <div className="routes_component">
       <Routes>
         <Route>
           <Route  path="/" element={<Dashboard />} />
@@ -39,9 +39,8 @@ const Employers = () => {
           <Route path="/resume-alerts" element={<ResumeAlerts />} />
           <Route path="/change-password" element={<ChangePassword />} />
         </Route>
-      </Routes>
-
-      <Outlet />
+      </Routes> 
+      </div>
     </section>
   )
 }
