@@ -17,7 +17,7 @@ import { RiDeleteBinLine } from 'react-icons/ri';
 const Sidebar = () => {
 
     const location = useLocation();
-    console.log(location.pathname)
+    // console.log(location.pathname)
 
     return (
         <div id="dashboard_menu">

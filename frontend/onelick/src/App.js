@@ -12,7 +12,13 @@ import Candidates from './Pages/Candidates/Candidates';
 import Blogs from './Pages/Blogs/Blogs';
 
 function App() {
+  const location = window.location.pathname
+  const curPath = location.substr(0,10);
 
+  useEffect(()=>{
+
+  },[location])
+  
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -23,6 +29,7 @@ function App() {
   }, [])
 
   return (
+
     <div className="App">
       <BrowserRouter>
 
@@ -39,7 +46,7 @@ function App() {
         </Routes>
 
         {/* footer */}
-        <Footer />
+        {curPath!=="/employers" && <Footer />}
 
       </BrowserRouter>
     </div>

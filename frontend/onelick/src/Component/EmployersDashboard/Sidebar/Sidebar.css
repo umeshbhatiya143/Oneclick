@@ -42,3 +42,9 @@
     background-color: #E2EAF8;
     color: #1967D2 !important;
 }
+
+@media screen and (max-width: 1300px){
+    #dashboard_menu{
+        padding: 10px;
+    }
+}

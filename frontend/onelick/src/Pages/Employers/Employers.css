@@ -6,11 +6,31 @@
     width: 100%;
 }
 .dashboard-container-sidebar{
-    height: 700px;
+    height: 92vh;
     overflow: scroll;
     width: 20%;
 }
 .routes_component{
     padding: 30px 40px;
     width: 75%;
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+@media screen and (max-width:1000px) {
+    .dashboard-container-sidebar{
+        width: 30%;
+    } 
+    .routes_component{
+        padding: 30px 10px;
+    }
+}
+@media screen and (max-width:700px) {
+    .dashboard-container-sidebar{
+        display: none;
+    }
+    .routes_component{
+        width: 100%;
+        padding: 30px 10px;
+    }
 }
