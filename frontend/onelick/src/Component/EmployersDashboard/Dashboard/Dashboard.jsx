@@ -5,15 +5,11 @@ import { TbFileInvoice } from 'react-icons/tb';
 import { BiMessageAltDetail } from 'react-icons/bi';
 import { FiBookmark } from 'react-icons/fi';
 import { GiTakeMyMoney } from 'react-icons/gi';
-import { BsBriefcase } from 'react-icons/bs';
-import { TbClockHour4 } from 'react-icons/tb';
 import { CiLocationOn } from 'react-icons/ci';
 import { RiDeleteBinLine } from 'react-icons/ri';
 import { IoEyeOutline } from 'react-icons/io5';
 import { RxCrossCircled } from 'react-icons/rx';
 import { IoCheckmark } from 'react-icons/io5';
-import { GiCash } from 'react-icons/gi';
-import { BiBookmark } from 'react-icons/bi';
 import candidatePhoto from '../../../assets/client_photo.jpg'
 
 
@@ -30,6 +26,7 @@ import {
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 import Candidates from '../../../Pages/Candidates/Candidates';
+import Sidebar from '../Sidebar/Sidebar';
 //   import {faker} from 'faker'
 
 ChartJS.register(
@@ -47,7 +44,7 @@ const Dashboard = () => {
 
     const [viewsDuration, setviewsDuration] = useState("6")
     const [applicants, setapplicants] = useState([])
-    const [adminLabel, setadminLabel] = useState()
+    const [dropOpen, setdropOpen] = useState(false)
 
     var labels;
     if (viewsDuration === "6") {
@@ -131,6 +128,18 @@ const Dashboard = () => {
 
     }
 
+    const handleMenu = () => {
+        const menu = document.getElementById('sidebar');
+
+        if (dropOpen) {
+            menu.style.height = "0px"
+        }
+        else {
+            menu.style.height = "800px"
+        }
+        setdropOpen(!dropOpen);
+    }
+
     // fetch applicants data
     const getData = () => {
         fetch(process.env.REACT_APP_JOB_POSTED)
@@ -143,7 +152,7 @@ const Dashboard = () => {
     useEffect(() => {
         getData();
         // console.log(applicants)
-    }, [viewsDuration, adminLabel])
+    }, [viewsDuration])
 
     return (
         <section id='dashboard_container'>
@@ -152,29 +161,52 @@ const Dashboard = () => {
                 <p>Ready to jump back in?</p>
             </div>
 
+            {/* Dashboard menu for mobile */}
+            <div className="dashboard_menu" onClick={() => handleMenu()}>
+                <div className="burger">
+                    <div className="line1"></div>
+                    <div className="line2"></div>
+                    <div className="line3"></div>
+                </div>
+                <span>Menu</span>
+            </div>
+            {/* sidebar for mobile */}
+            <div id="sidebar">
+                <Sidebar />
+            </div>
+
             <div className="fetched_data_row">
-                <div className="tag_cards">
+                <div
+                    data-aos="zoom-in"
+                    className="tag_cards">
                     <SlBriefcase size={30} className="icon" color={"#1967D2"} />
                     <div className="content">
                         <span style={{ color: "#1967D2", fontSize: "30px", fontWeight: "500" }}>22</span>
                         <span style={{ fontSize: "14px" }}>Posted jobs</span>
                     </div>
                 </div>
-                <div className="tag_cards">
+                <div
+                    data-aos="zoom-in"
+                    className="tag_cards">
                     <TbFileInvoice size={30} color={"#D93025"} className="icon" style={{ backgroundColor: "#fbebe8" }} />
                     <div className="content">
                         <span style={{ color: "#D93025", fontSize: "30px", fontWeight: "500" }}>9382</span>
                         <span style={{ fontSize: "14px" }}>Application</span>
                     </div>
                 </div>
-                <div className="tag_cards">
+                <div
+                    data-aos="zoom-in"
+                    className="tag_cards">
                     <BiMessageAltDetail color={"#F9AB00"} size={30} className="icon" style={{ backgroundColor: "#fff7e5" }} />
                     <div className="content">
                         <span style={{ color: "#F9AB00", fontSize: "30px", fontWeight: "500" }}>22</span>
                         <span style={{ fontSize: "14px" }}>Messages</span>
                     </div>
                 </div>
-                <div className="tag_cards">
+                <div
+                    data-aos="zoom-in"
+                    data-aos-offset="-300"
+                    className="tag_cards">
                     <FiBookmark color={"#35a953"} size={30} className="icon" style={{ backgroundColor: "#ebf6ec" }} />
                     <div className="content">
                         <span style={{ color: "#35a953", fontSize: "30px", fontWeight: "500" }}>22</span>
@@ -187,7 +219,11 @@ const Dashboard = () => {
 
             <div className="chart_notification_hld">
                 {/* profile statistics */}
-                <div className="profile_statistic">
+                <div
+                    data-aos="fade-up"
+                    data-aos-duration="2000"
+                    data-aos-offset="-300"
+                    className="profile_statistic">
                     <div className="heading_dropdown_hld">
                         <h4>Your Profile Views</h4>
                         <select name="" id="" onChange={(e) => setviewsDuration(e.target.value)}>
@@ -202,7 +238,11 @@ const Dashboard = () => {
                 </div>
 
                 {/* notification container */}
-                <div className="profile_notifications">
+                <div
+                    data-aos="fade-up"
+                    data-aos-duration="2000"
+                    data-aos-offset="-800"
+                    className="profile_notifications">
                     <h4>Notifications</h4>
                     {
                         dummyNames.map((data) => {

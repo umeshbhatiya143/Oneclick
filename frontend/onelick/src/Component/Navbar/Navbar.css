@@ -326,6 +326,7 @@ nav input,
 }
 
 @media screen and (max-width:480px) {
+
   #logo {
     width: 150px;
     margin-left: 5px;
