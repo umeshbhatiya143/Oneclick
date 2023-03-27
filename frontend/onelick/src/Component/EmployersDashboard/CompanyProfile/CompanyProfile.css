@@ -81,6 +81,7 @@
 .right input,
 
 .right select,
+.left select,
 .data_row3 textarea{
     width: 96%;
     /*height: 40px;
@@ -105,6 +106,9 @@
   width: 98%;
   height: 120px;
   resize: none;
+}
+.data_row3 input{
+    margin-top: 10px;
 }
 .left select,
 .right select{

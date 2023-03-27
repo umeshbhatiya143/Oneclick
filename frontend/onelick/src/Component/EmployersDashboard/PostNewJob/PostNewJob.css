@@ -1,0 +1,8 @@
+#PostNewJob{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+}
+
+/* rest part of css inherited from company profile page */
