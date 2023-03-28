@@ -1,11 +1,13 @@
-#companyProfile_container {
+#companyProfile_container,
+#PostNewJob {
     display: flex;
     flex-direction: column;
     gap: 50px;
     width: 100%;
 }
 
-#companyProfile_container h4 {
+#companyProfile_container h4,
+#PostNewJob h4 {
     font-size: 20px !important;
 }
 
@@ -13,6 +15,7 @@
 
 .company_data_hld {
     display: flex;
+    width: auto;
     flex-direction: column;
     gap: 30px;
     background-color: #fff;
@@ -35,6 +38,10 @@
     display: flex;
     gap: 30px;
     align-items: center;
+    width: 100%;
+}
+.data_row3{
+    width: 100%;
 }
 .data_row1 .hide {
     display: none;
@@ -79,15 +86,15 @@
 }
 .left input,
 .right input,
-
 .right select,
 .left select,
-.data_row3 textarea{
-    width: 96%;
-    /*height: 40px;
-    */background-color: #d0e0fc;
+.data_row3 textarea,
+.data_row3 input{
+    max-width: 100%;
+    /* height: 30px; */
+    background-color: #d0e0fc;
     border: 1px solid #d0e0fc;
-    padding: 10px;
+    padding: 15px 10px;
     font-size: 12px;
     border-radius: 5px;
     color: dimgray;
@@ -109,6 +116,7 @@
 }
 .data_row3 input{
     margin-top: 10px;
+    width: 98%;
 }
 .left select,
 .right select{
@@ -131,7 +139,7 @@ form .submit{
     border-radius: 5px;
     background-color: #1967D2;
     color: #fff;
-    padding: 10px;
+    padding: 15px 10px;
     border: none;
     font-size: 16px;
     transition: all .3s ease;
@@ -163,7 +171,7 @@ form .submit:hover{
 .select2-container .select2-search--inline .select2-search__field{
     margin-top: 0 !important;
     background-color: #d0e0fc !important;
-    height: 38px !important;
+    height: 45px !important;
     margin: 0 !important;
     padding: 10px !important;
     font-size: 12px !important;
@@ -178,10 +186,51 @@ form .submit:hover{
 .select2-container--default .select2-selection--multiple .select2-selection__rendered{
     padding: 0 !important;
     border-radius: 5px !important;
-    -webkit-border-radius: 5px !;
-    -moz-border-radius: 5px !;
-    -ms-border-radius: 5px !;
-    -o-border-radius: 5px !;
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    -ms-border-radius: 5px !important;
+    -o-border-radius: 5px !important;
+}
+
+
+/* ------additional css for post new job page--------- */
+.data_row2 .icon_hld{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 25vw;
+    justify-content: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+.data_row2 .icon{
+    padding: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: #d0e0fc ;
+    color: #1967D2;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.css-13cymwt-control,
+.css-1fdsijx-ValueContainer,
+.css-1hb7zxy-IndicatorsContainer {
+    background-color: #d0e0fc !important;
+    height: 50px !important;
+    font-size: 12px !important;
+}
+.css-1xc3v61-indicatorContainer{
+    color: gray !important;
+}
+
+@media screen and (max-width: 1000px){
+    .data_row2 .icon_hld{
+        width: 350px !important;
+    }
+    .icon_hld span{
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -199,5 +248,13 @@ form .submit:hover{
     .data_row2 .left,
     .data_row2 .right{
         width: 100%;
+    }
+    .data_row2 .icon_hld{
+        flex-direction: column;
+        margin-bottom:10px ;
+    }
+    .data_row3 input,
+    .data_row3 textarea{
+        width: 93%;
     }
 }

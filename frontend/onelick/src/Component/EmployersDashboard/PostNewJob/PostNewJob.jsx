@@ -1,15 +1,19 @@
 import React, { useState } from 'react'
 import Sidebar from '../Sidebar/Sidebar'
-import { BsArrowUp } from 'react-icons/bs';
-import './PostNewJob.css'
+import { VscBriefcase } from 'react-icons/vsc';
+import { FaMoneyBillAlt } from 'react-icons/fa';
+import { BsCheck2Circle } from 'react-icons/bs';
+import '../CompanyProfile/CompanyProfile.css'
 import Select2 from 'react-select2-wrapper';
 import 'react-select2-wrapper/css/select2.css';
+import AddressSelector from './AddressSelector';
 
 const PostNewJob = () => {
   const [dropOpen, setdropOpen] = useState(false)
   const [selectedOption, setSelectedOption] = useState(null);
 
 
+    // sidebar menu
   const handleMenu = () => {
     const menu = document.getElementById('sidebar');
 
@@ -21,6 +25,7 @@ const PostNewJob = () => {
     }
     setdropOpen(!dropOpen);
   }
+
   return (
     <section id='PostNewJob'>
 
@@ -44,11 +49,26 @@ const PostNewJob = () => {
         <Sidebar />
       </div>
 
-
       {/* ------company data----- */}
 
       <div className="company_data_hld">
         <h4>Post Job</h4>
+
+        <div className="data_row2">
+          <div className="icon_hld" data-aos="zoom-in">
+            <VscBriefcase size={30} className='icon' />
+            <span>Job Detail</span>
+          </div>
+          <div className="icon_hld" data-aos="zoom-in">
+            <FaMoneyBillAlt size={30} className='icon' />
+            <span>Package & payments</span>
+          </div>
+          <div className="icon_hld" data-aos="zoom-in">
+            <BsCheck2Circle size={30} className='icon' />
+            <span>Confirmation</span>
+          </div>
+        </div>
+
         <form action="">
 
           <div className="data_row3">
@@ -134,14 +154,14 @@ Onelick offers a range of features that help job seekers find their dream job qu
             <div className="right">
               <label htmlFor="gender">Gender</label>
               <select name="" id="gender">
-              <option value="">Select...</option>
+                <option value="">Select...</option>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
                 <option value="Other">Other</option>
               </select>
             </div>
           </div>
-          
+
           <div className="data_row2">
             <div className="left">
               <label htmlFor="Industry">Industry</label>
@@ -168,9 +188,10 @@ Onelick offers a range of features that help job seekers find their dream job qu
               <input type="date" id='deadline' />
             </div>
           </div>
-
-          <p>Contact form is to be made with google map in which company can find their location...</p>
-
+         
+         {/* address selector */}
+         <AddressSelector/>
+          
           <input type="submit" value="Save" className='submit' />
         </form>
       </div>

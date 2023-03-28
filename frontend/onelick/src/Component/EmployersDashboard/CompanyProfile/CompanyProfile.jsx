@@ -4,6 +4,7 @@ import { BsArrowUp } from 'react-icons/bs';
 import './CompanyProfile.css'
 import Select2 from 'react-select2-wrapper';
 import 'react-select2-wrapper/css/select2.css';
+import AddressSelector from '../PostNewJob/AddressSelector';
 
 const CompanyProfile = () => {
   const [dropOpen, setdropOpen] = useState(false)
@@ -192,8 +193,13 @@ Onelick offers a range of features that help job seekers find their dream job qu
       {/* -----contact information------ */}
       <div className="company_data_hld">
         <h4>Contact Information</h4>
+        
+        <form action="">
+        <AddressSelector/>
+        <input type="submit" value="Save" className='submit' />
 
-        <p>Contact form is to be made with google map in which company can find their location...</p>
+        </form>
+
       </div>
 
       {/* copyright content */}
