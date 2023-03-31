@@ -287,6 +287,7 @@ const Dashboard = () => {
                                         <p className="tags">Digital</p>
                                     </div>
 
+                                    {/* responsible for handling access */}
                                     <div className="content_row">
                                         <div className='admin_label'>
                                             <label>View Application</label>
