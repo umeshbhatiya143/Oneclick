@@ -4,7 +4,9 @@
   gap: 50px;
   width: 100%;
 }
-
+#ManageJobs_container h4 {
+  font-size: 20px !important;
+}
 .data_hld {
   overflow-x: scroll;
   /* scroll-snap-type: mandatory; */

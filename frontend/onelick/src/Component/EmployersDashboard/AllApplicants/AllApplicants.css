@@ -1,0 +1,34 @@
+/* -----css for this page inherited from dashboard--- */
+
+.heading_dropdown_hld .dropdowns{
+    display: flex;
+    gap: 20px;
+}
+#AllApplicants_container .data_action_row{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 14px;
+    background-color: #d0e0fc;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+@media screen and (max-width:1000px) {
+    .heading_dropdown_hld .dropdowns{
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width:540px) {
+    .heading_dropdown_hld .dropdowns{
+      flex-direction: column;
+    }
+    .data_action_row .jobCategory{
+        display: none;
+    }
+}

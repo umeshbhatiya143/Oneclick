@@ -7,6 +7,11 @@
 
   }
   
+  :root{
+    --success_color: #35A953;
+    --primary_color:#292DF2;
+    --danger_color:#D93025;
+  }
   
   /* for chrome, webkit browser */
   ::-webkit-scrollbar {
