@@ -11,6 +11,8 @@
     --success_color: #35A953;
     --primary_color:#292DF2;
     --danger_color:#D93025;
+    --btn_primary:#1967D2;
+    --btn_primary_hover:#1b52a0;
   }
   
   /* for chrome, webkit browser */

@@ -1,5 +1,6 @@
 #dashboard_container,
-#AllApplicants_container {
+#AllApplicants_container, 
+#ChangePassword_container{
     display: flex;
     flex-direction: column;
     gap: 50px;
